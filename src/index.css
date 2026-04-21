@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f7fb;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+/* Password type switch */
+.type-switch {
+    display: flex;
+    background-color: #f1f3f7;
+    padding: 6px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.type-switch button {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 12px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #475569;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.type-switch button:hover {
+    background-color: #e5e7eb;
+}
+
+.type-switch .active {
+    background-color: #ffffff;
+    color: #0f172a;
+    box-shadow: 0 0 0 1px #e5e7eb;
+}
+
+/* Password field */
+.password {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 16px;
+}
+
+/* Options (random mode) */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #334155;
+}
+
+label input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+select,
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+/* Length control */
+label input[type="range"] {
+    width: 100%;
+    margin-top: 8px;
+}
+
+label input[type="number"] {
+    margin-top: 8px;
+}
+
+/* Generate button */
+.generate {
+    width: 100%;
+    margin-top: 16px;
+    padding: 14px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.generate:hover {
+    background-color: #1d4ed8;
+}
+
+/* Animation */
+@keyframes regen {
+    from {
+        opacity: 0.4;
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.regen {
+    animation: regen 0.2s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+}
