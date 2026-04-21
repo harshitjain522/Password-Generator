@@ -107,7 +107,3 @@ src/
    - Optionally add custom symbols
 3. **Generate**: The password is automatically generated as you adjust settings
 4. **Copy**: Click to copy the generated password to your clipboard
-
-## License
-
-This project is open source and available under the MIT License.
