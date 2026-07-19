@@ -1,0 +1,34 @@
+.generate {
+    width: 100%;
+    margin-top: 16px;
+    padding: 14px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.generate:hover {
+    background-color: #1d4ed8;
+}
+
+.generate:active {
+    transform: scale(0.98);
+}
+
+.generate svg {
+    transition: transform 0.3s ease;
+}
+
+.generate:hover svg {
+    transform: rotate(180deg);
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import "./TypeSelector.css";
 
 function TypeSelector({ type, setType }) {
     return (
